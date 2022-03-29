@@ -14,6 +14,7 @@ import AdminPanel from "./components/Admin/AdminPanel";
 import Timeline from "./components/Admin/Timeline";
 import Youtube from "./components/Admin/Youtube";
 import Project from "./components/Admin/Project";
+import Loader from "./components/Loader/Loader";
 
 function App() {
   const dispatch = useDispatch();
@@ -29,7 +30,7 @@ function App() {
   return (
     <Router>
       {loading ? (
-        <div>Loading</div>
+        <Loader />
       ) : (
         <>
           <Header />
