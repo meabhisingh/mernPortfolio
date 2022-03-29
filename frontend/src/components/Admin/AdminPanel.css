@@ -1,0 +1,132 @@
+.adminPanel {
+  width: 100%;
+  min-height: 100vh;
+  background-color: hsl(219, 48%, 8%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.adminPanelContainer {
+  width: 100%;
+  max-width: 1200px;
+  min-height: 100vh;
+  background-color: #f1f1f1;
+}
+.adminPanelContainer > h4 {
+  margin: 2vmax;
+  letter-spacing: 15px;
+  display: flex;
+  transform: translateX(-100vw);
+  animation: contactFormInputs 1s ease-in-out forwards;
+  justify-content: center;
+}
+.adminPanelContainer > h4 > p {
+  transition: all 0.5s;
+}
+.adminPanelContainer > h4 > p:hover {
+  transform: translateY(-10px);
+}
+
+.adminPanelContainer > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4vmax;
+  padding-top: 0;
+}
+
+.adminPanelInputs {
+  width: 50%;
+  padding: 1vmax 2vmax;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  font: 100 1rem "Roboto", sans-serif;
+  outline: none;
+  margin: 2vmax;
+  box-sizing: border-box;
+}
+
+.adminPanelSkill {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.adminPanelSkill > div {
+  display: flex;
+  align-items: center;
+  margin: 2vmax;
+}
+.adminPanelSkill > div > p {
+  font: 400 1.5rem "Roboto", sans-serif;
+  margin-right: 2vmax;
+  color: rgba(24, 24, 24, 0.815);
+}
+
+.adminPanelFileUpload::-webkit-file-upload-button {
+  width: 100%;
+  border-radius: 30px;
+  border: none;
+  font: 100 1rem "Roboto", sans-serif;
+  cursor: pointer;
+  background-color: #7c73f8;
+  padding: 1vmax;
+  color: white;
+}
+
+.adminPanelAbout > fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid rgb(0, 0, 0);
+  margin: 2vmax 0;
+  padding-bottom: 3vmax;
+}
+
+.adminPanelAbout {
+  width: 100%;
+}
+.adminPanelAbout > fieldset > legend {
+  margin: 2vmax;
+  font: 400 2rem "Roboto";
+}
+
+.adminPanelContainer > form > a {
+  background-color: #fafafa;
+  padding: 2vmax;
+  font: 400 2rem "Roboto", sans-serif;
+  color: rgb(44, 44, 44);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 220px;
+  margin: 2vmax;
+  transition: all 0.5s;
+}
+.adminPanelContainer > form > a:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.212);
+  transform: scale(1.1);
+}
+.adminPanelContainer > form > button {
+  width: 100%;
+  padding: 1vmax;
+  margin: 2vmax;
+  background-color: hsl(219, 48%, 8%);
+}
+.adminPanelContainer > form > button:hover {
+  background-color: hsl(221, 46%, 20%);
+}
+
+.adminPanelYoutubeVideos {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}

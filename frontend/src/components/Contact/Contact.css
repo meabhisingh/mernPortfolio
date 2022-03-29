@@ -1,0 +1,87 @@
+.contact {
+  background-color: hsl(219, 48%, 8%);
+
+  width: 100%;
+  height: 100vh;
+}
+
+.contactRightBar {
+  background-image: linear-gradient(to bottom, hsl(250, 100%, 75%), white);
+
+  width: 30%;
+  height: inherit;
+  animation: contactFormTransition 1s linear forwards;
+  position: absolute;
+  right: 0;
+}
+
+.contactContainer {
+  height: 80%;
+  width: 70%;
+  background-color: white;
+  position: absolute;
+  border-radius: 100px 0 0 100px;
+  top: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.473);
+  display: flex;
+  justify-content: center;
+  animation: contactTransition 1s linear forwards;
+}
+
+.contactContainerForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 50%;
+}
+.contactContainerForm > h4 {
+  text-align: center;
+  margin: 1vmax;
+}
+.contactContainerForm > input,
+.contactContainerForm > textarea {
+  padding: 1vmax;
+  outline: none;
+  border-radius: 3px;
+  font-size: 1rem;
+  font-family: "Roboto";
+  border: 1px solid rgba(0, 0, 0, 0.205);
+  transform: translateX(-100vw);
+  animation: contactFormInputs 1s ease-in-out forwards 0.5s;
+}
+.contactContainerForm > button {
+  background-color: hsl(250, 100%, 75%);
+  transform: translateY(-100vh);
+  animation: contactFormBtn 1s ease-in-out forwards 1s;
+}
+.contactContainerForm > button:hover {
+  background-color: hsl(219, 48%, 8%);
+}
+
+@keyframes contactTransition {
+  from {
+    transform: translateX(-100%) translateY(-50%);
+  }
+  to {
+    transform: translateX(20%) translateY(-50%);
+  }
+}
+
+@keyframes contactFormTransition {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes contactFormBtn {
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes contactFormInputs {
+  to {
+    transform: translateX(0);
+  }
+}

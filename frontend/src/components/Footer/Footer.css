@@ -1,0 +1,70 @@
+.footer {
+  background-color: rgb(26, 26, 26);
+  padding: 3vmax;
+  display: grid;
+  grid-template-columns: 1fr 200px;
+}
+.footer > div > h5 {
+  color: white;
+  border-bottom: 1px solid white;
+  width: 120px;
+  margin-bottom: 20px;
+  padding: 10px 0;
+}
+.footer > div > p {
+  color: white;
+  width: 60%;
+}
+
+.footer > div > h6 {
+  color: white;
+  padding: 10px 0;
+}
+
+.footer > div:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer > div > a {
+  font-size: 3vmax;
+  color: white;
+  transition: all 0.3s;
+}
+.footer > div > a:nth-child(2):hover {
+  color: rgb(64, 88, 226);
+}
+.footer > div > a:nth-child(3):hover {
+  color: rgb(241, 59, 59);
+}
+.footer > div > a:nth-child(4):hover {
+  color: rgb(119, 61, 212);
+}
+.footer > div > a:nth-child(5):hover {
+  color: rgb(64, 88, 226);
+}
+
+.footerContactBtn {
+  background-color: white;
+  color: black;
+  padding: 5px;
+  width: 120px;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  margin: 2vmax 0;
+  border: 1px solid white;
+  transition: all 0.5s;
+}
+
+.footerContactBtn > p {
+  color: black;
+}
+
+.footerContactBtn:hover {
+  background-color: unset;
+}
+.footerContactBtn:hover p {
+  color: rgb(255, 255, 255);
+}

@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "backend/server.js",
+  "type": "module",
+  "dependencies": {
+    "cloudinary": "^1.29.0",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.2.8",
+    "nodemailer": "^6.7.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "nodemon backend/server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
