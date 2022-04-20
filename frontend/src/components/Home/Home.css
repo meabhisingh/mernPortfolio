@@ -254,3 +254,40 @@
     transform: translateY(-200%);
   }
 }
+
+@media screen and (max-width: 600px) {
+  .homeCanvasContainer > a {
+    transform: translate(-50%, 0%);
+    bottom: 10%;
+    top: unset;
+  }
+
+  .homeCanvasBox > h2 {
+    font: 900 2rem "Ubuntu Mono", "Roboto";
+    letter-spacing: 15px;
+    line-height: 60px;
+  }
+  .homeCubeSkills {
+    width: 100px;
+    height: 100px;
+  }
+
+  .homeCubeSkillsFace1 {
+    transform: translate3d(0, 0, 75px);
+  }
+  .homeCubeSkillsFace2 {
+    transform: rotateY(180deg) translate3d(0, 0, 75px);
+  }
+  .homeCubeSkillsFace3 {
+    transform: rotateY(-90deg) translate3d(0, 0, 75px);
+  }
+  .homeCubeSkillsFace4 {
+    transform: rotateY(90deg) translate3d(0, 0, 75px);
+  }
+  .homeCubeSkillsFace5 {
+    transform: rotateX(90deg) translate3d(0, 0, 75px);
+  }
+  .homeCubeSkillsFace6 {
+    transform: rotateX(-90deg) translate3d(0, 0, 75px);
+  }
+}

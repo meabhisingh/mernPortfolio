@@ -78,6 +78,7 @@
 @media screen and (max-width: 600px) {
   .about {
     align-items: flex-end;
+    padding-top: 100px;
   }
   .aboutContainer {
     display: none;
